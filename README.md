@@ -3,8 +3,6 @@
 `Um app simples em desenvolvimento, 
 ainda tenho que arrumar as lógicas e o layout de dentro.`
 
-![Logo do App](unnamed-_1_.png)
-
 
 # App de Notas com Salvamento Automático
 

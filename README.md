@@ -1,8 +1,6 @@
-# Notes-Z
-
 ![Banner](assets/notesz.png)
 
-## Visão Geral
+## Notes Z 
 
 O Notes-Z é um aplicativo Android leve para anotações rápidas com salvamento automático local.  
 O foco do projeto é oferecer simplicidade, desempenho e funcionamento offline.

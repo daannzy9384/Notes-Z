@@ -121,12 +121,6 @@ public class SketchwareUtil {
         }
     }
 
-    public static boolean isConnected(Context _context) {
-        ConnectivityManager _connectivityManager = (ConnectivityManager) _context.getSystemService(Context.CONNECTIVITY_SERVICE);
-        NetworkInfo _activeNetworkInfo = _connectivityManager.getActiveNetworkInfo();
-        return _activeNetworkInfo != null && _activeNetworkInfo.isConnected();
-    }
-
     public static String copyFromInputStream(InputStream _inputStream) {
         ByteArrayOutputStream _outputStream = new ByteArrayOutputStream();
         byte[] _buf = new byte[1024];

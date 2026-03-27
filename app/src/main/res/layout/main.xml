@@ -8,7 +8,7 @@
 	<LinearLayout
 		android:id="@+id/linear1"
 		android:layout_width="match_parent"
-		android:layout_height="match_parent"
+		android:layout_height="0dp"
 		android:padding="8dp"
 		android:gravity="left"
 		android:orientation="vertical"
@@ -22,12 +22,13 @@
 			android:textColor="#9E9E9E"
 			android:hint="O que você está pensando\? "
 			android:textColorHint="#9E9E9E" />
-		<Button
-			android:id="@+id/button1"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:padding="8dp"
-			android:text="TEMAS"
-			android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="TEMAS"
+            android:textSize="12sp" />
 	</LinearLayout>
 </LinearLayout>

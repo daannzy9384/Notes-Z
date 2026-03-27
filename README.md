@@ -1,11 +1,55 @@
-<img src= assets/notesz.png />
-
 # Notes-Z
 
-`Um app simples em desenvolvimento, 
-ainda tenho que arrumar as lógicas e o layout de dentro.`
+![Banner](assets/notesz.png)
 
+## Visão Geral
 
-# App de Notas com Salvamento Automático
+O Notes-Z é um aplicativo Android leve para anotações rápidas com salvamento automático local.  
+O foco do projeto é oferecer simplicidade, desempenho e funcionamento offline.
 
-Este projeto é um app simples que permite ao usuário digitar em um campo de texto multilinha e salvar o conteúdo automaticamente em um arquivo de texto no armazenamento interno do dispositivo.
+Este projeto está sendo desenvolvido como parte do meu aprendizado contínuo em desenvolvimento mobile e arquitetura de software.
+
+---
+
+## Funcionalidades
+
+- Editor de texto multilinha
+- Salvamento automático
+- Armazenamento local (offline)
+- Interface simples e responsiva
+
+---
+
+## Status do Projeto
+
+O projeto está em desenvolvimento ativo.
+
+Melhorias em andamento:
+
+- Refatoração da lógica interna
+- Aprimoramento da interface
+- Organização e limpeza do código
+
+---
+
+## Tecnologias Utilizadas
+
+- Kotlin / Java (ajustar conforme o projeto)
+- Android Studio
+- Gradle
+
+---
+
+## Como Executar
+
+### Pré-requisitos
+
+- Android Studio instalado
+- Java 17 ou superior
+
+### Instalação
+
+Clone o repositório:
+
+```bash
+git clone https://github.com/daannzy9/notes-z.git

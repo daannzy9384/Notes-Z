@@ -1,3 +1,5 @@
+<img src= app/src/main/res/mipmap-mdpi/ic_launcher.png />
+
 # Notes-Z
 
 `Um app simples em desenvolvimento, 

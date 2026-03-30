@@ -20,13 +20,13 @@ jobs:
         distribution: 'temurin'
         cache: gradle
 
-    - name: Grant execute permission for gradlew
-      run: chmod +x gradlew
+    - name: Permitir execução do Gradle
+      run: chmod +x ./gradlew 
 
-    - name: Build with Gradle
+    - name: Gerar APK de Teste
       run: ./gradlew assembleDebug
 
-    - name: Upload APK
+    - name: Salvar APK para Download
       uses: actions/upload-artifact@v4
       with:
         name: Notes-Z-App

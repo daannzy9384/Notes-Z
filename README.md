@@ -1,118 +1,53 @@
-<img src= app/src/main/res/mipmap-mdpi/ic_launcher.png />
+![Banner](assets/notesz.png)
 
-# Notes-Z
+## Notes Z 
 
-`Um app simples em desenvolvimento, 
-ainda tenho que arrumar as lógicas e o layout de dentro.`
+O Notes-Z é um aplicativo Android leve para anotações rápidas com salvamento automático local.  
+O foco do projeto é oferecer simplicidade, desempenho e funcionamento offline.
 
-
-# App de Notas com Salvamento Automático
-
-Este projeto é um app simples que permite ao usuário digitar em um campo de texto multilinha e salvar o conteúdo automaticamente em um arquivo de texto no armazenamento interno do dispositivo.
+Este projeto está sendo desenvolvido como parte do meu aprendizado contínuo em desenvolvimento mobile e arquitetura de software.
 
 ---
 
-## Configuração do Layout
+## Funcionalidades
 
-- Adicionamos um `EditText` multilinha no layout.
-- Definimos o ID como `edittext1`.
-- Configuramos o `hint`, o tamanho e o `inputType` para texto livre.
-
----
-
-## Permissões Necessárias
-
-Para permitir que o app leia e grave arquivos no armazenamento interno, habilitamos a permissão:
-
-## WRITE_EXTERNAL_STORAGE
-
-css
-Copiar
-Editar
-
-Essa configuração foi feita em:
-
-Project settings → Permission
-
-yaml
-Copiar
-Editar
+- Editor de texto multilinha
+- Salvamento automático
+- Armazenamento local (offline)
+- Interface simples e responsiva
 
 ---
 
-## Fluxo do App
+## Status do Projeto
 
-### Evento `onCreate`
+O projeto está em desenvolvimento ativo.
 
-Ao iniciar a Activity, o app executa o seguinte comando para carregar o conteúdo do arquivo no campo de texto:
+Melhorias em andamento:
 
-```java
-setText(edittext1, FileUtil.readFile("/storage/emulated/0/MinhasNotas.txt"));
-Esse comando lê o arquivo MinhasNotas.txt da raiz do armazenamento interno e exibe o conteúdo no edittext1.
-
-Evento onTextChanged(edittext1)
-Durante a digitação, o app salva automaticamente o conteúdo em tempo real com o código:
-
-java
-Copiar
-Editar
-FileUtil.writeFile("/storage/emulated/0/MinhasNotas.txt", getText(edittext1));
-# Notes-Z
-
-`Um app simples em desenvolvimento, 
-ainda tenho que arrumar as lógicas e o layout de dentro.`
-
-![Logo do App](unnamed-_1_.png)
-
-
-# App de Notas com Salvamento Automático
-
-Este projeto é um app simples que permite ao usuário digitar em um campo de texto multilinha e salvar o conteúdo automaticamente em um arquivo de texto no armazenamento interno do dispositivo.
+- Refatoração da lógica interna
+- Aprimoramento da interface
+- Organização e limpeza do código
 
 ---
 
-## Configuração do Layout
+## Tecnologias Utilizadas
 
-- Adicionamos um `EditText` multilinha no layout.
-- Definimos o ID como `edittext1`.
-- Configuramos o `hint`, o tamanho e o `inputType` para texto livre.
-
----
-
-## Permissões Necessárias
-
-Para permitir que o app leia e grave arquivos no armazenamento interno, habilitamos a permissão:
-
-## WRITE_EXTERNAL_STORAGE
-
-css
-Copiar
-Editar
-
-Essa configuração foi feita em:
-
-Project settings → Permission
-
-yaml
-Copiar
-Editar
+- Kotlin / Java (ajustar conforme o projeto)
+- Android Studio
+- Gradle
 
 ---
 
-## Fluxo do App
+## Como Executar
 
-### Evento `onCreate`
+### Pré-requisitos
 
-Ao iniciar a Activity, o app executa o seguinte comando para carregar o conteúdo do arquivo no campo de texto:
+- Android Studio instalado
+- Java 17 ou superior
 
-```java
-setText(edittext1, FileUtil.readFile("/storage/emulated/0/MinhasNotas.txt"));
-Esse comando lê o arquivo MinhasNotas.txt da raiz do armazenamento interno e exibe o conteúdo no edittext1.
+### Instalação
 
-Evento onTextChanged(edittext1)
-Durante a digitação, o app salva automaticamente o conteúdo em tempo real com o código:
+Clone o repositório:
 
-java
-Copiar
-Editar
-FileUtil.writeFile("/storage/emulated/0/MinhasNotas.txt", getText(edittext1));
+```bash
+git clone https://github.com/daannzy9/notes-z.git

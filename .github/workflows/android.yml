@@ -1,10 +1,15 @@
 name: Android CI
 
 on:
+  # Permite rodar o build manualmente clicando no botão "Run workflow"
+  workflow_dispatch:
+
+  # Só roda automático se houver mudanças reais no código da branch main
   push:
     branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+    paths-ignore:
+      - '**.md'
+      - '.gitignore'
 
 jobs:
   build:
@@ -21,7 +26,7 @@ jobs:
         cache: gradle
 
     - name: Permitir execução do Gradle
-      run: chmod +x ./gradlew 
+      run: chmod +x ./gradlew
 
     - name: Gerar APK de Teste
       run: ./gradlew assembleDebug
@@ -31,4 +36,3 @@ jobs:
       with:
         name: Notes-Z-App
         path: app/build/outputs/apk/debug/*.apk
-        

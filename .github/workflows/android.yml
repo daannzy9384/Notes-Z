@@ -1,15 +1,8 @@
 name: Android CI
 
 on:
-  # Permite rodar o build manualmente clicando no botão "Run workflow"
+  # Habilita o botão manual na aba Actions
   workflow_dispatch:
-
-  # Só roda automático se houver mudanças reais no código da branch main
-  push:
-    branches: [ "main" ]
-    paths-ignore:
-      - '**.md'
-      - '.gitignore'
 
 jobs:
   build:

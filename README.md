@@ -1,4 +1,4 @@
-![Banner](assets/Bunner.png)
+![Banner](assets/Banner.png)
 
 ## Notes Z 
 

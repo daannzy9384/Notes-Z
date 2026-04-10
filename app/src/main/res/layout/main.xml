@@ -1,34 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
 	xmlns:android="http://schemas.android.com/apk/res/android"
-	xmlns:app="http://schemas.android.com/apk/res-auto"
-	xmlns:tools="http://schemas.android.com/tools"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
 	android:orientation="vertical">
+
 	<LinearLayout
 		android:id="@+id/linear1"
 		android:layout_width="match_parent"
 		android:layout_height="0dp"
+		android:layout_weight="1"
 		android:padding="8dp"
-		android:gravity="left"
-		android:orientation="vertical"
-		android:layout_weight="1">
+		android:orientation="vertical">
+
 		<EditText
 			android:id="@+id/edittext1"
-			android:layout_width="wrap_content"
+			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
 			android:padding="8dp"
 			android:textSize="16sp"
 			android:textColor="#9E9E9E"
-			android:hint="O que você está pensando\? "
-			android:textColorHint="#9E9E9E" />
+			android:hint="O que você está pensando?"
+			android:textColorHint="#9E9E9E"
+			android:background="@android:color/transparent" />
 
-        <Button
-            android:id="@+id/button1"
-            android:layout_width="65dp"
-            android:layout_height="wrap_content"
-            android:padding="8dp"
-            android:text="TEMAS"
-            android:textSize="12sp" />
 	</LinearLayout>
+
+	<Button
+		android:id="@+id/button1"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="end"
+		android:layout_margin="16dp"
+		android:text="TEMAS"
+		android:textSize="12sp" />
+
 </LinearLayout>
